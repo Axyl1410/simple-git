@@ -6,7 +6,7 @@ const path = "./data.json";
 
 const isValidDate = (date) => {
   const startDate = moment("2019-01-04");
-  const endDate = moment("2014-07-10");
+  const endDate = moment("2024-07-10");
   return date.isBetween(startDate, endDate, null, "[]");
 };
 
@@ -26,7 +26,7 @@ const makeCommits = async (n) => {
     const randomWeek = random.int(0, 54 * 4);
     const randomDay = random.int(0, 6);
 
-    const randomDate = moment("2014-07-10")
+    const randomDate = moment("2019-01-04")
       .add(randomWeek, "weeks")
       .add(randomDay, "days");
 
